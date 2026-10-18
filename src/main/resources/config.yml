@@ -1,0 +1,29 @@
+# ===== GawharaAFK =====
+
+# بعد كام ثانية من عدم النشاط اللاعب يبقى AFK
+afk-after-seconds: 120
+
+# طرد اللاعب بعد كام ثانية خمول (0 = متعطل)
+kick-after-seconds: 0
+
+# أقل مسافة أفقية (بلوك) تتحسب حركة. زوّدها لو مياه/مصاعد بتطلّع اللاعب من الـ AFK
+move-threshold: 0.05
+
+# تحريك الماوس (الكاميرا) يتحسب نشاط
+count-rotation-as-activity: true
+
+# إعلان في الشات لما حد يدخل/يخرج من AFK
+announce: false
+
+tag:
+  # الكلمة اللي بتظهر فوق راس اللاعب وفي التاب
+  prefix: "&7[AFK] "
+  # يخلي اسم اللاعب رمادي وهو AFK
+  gray-name: true
+
+messages:
+  now-afk: "&8» &7{player} &7بقى &8[&7AFK&8]"
+  no-longer-afk: "&8» &7{player} &aرجع تاني"
+  kick: "&cتم طردك لأنك كنت AFK لفترة طويلة."
+  reloaded: "&aتم إعادة تحميل الإعدادات."
+  no-permission: "&cمعندكش صلاحية."

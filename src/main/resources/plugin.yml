@@ -1,0 +1,21 @@
+name: GawharaAFK
+version: 1.0.0
+main: net.gawhara.afk.AfkPlugin
+api-version: '26.1'
+author: GawharaSMP
+description: يكتب AFK فوق اللاعب لما يبقى خامل
+commands:
+  afk:
+    description: تبديل وضع AFK
+    usage: /afk
+    permission: afk.use
+permissions:
+  afk.use:
+    description: استخدام /afk
+    default: true
+  afk.exempt:
+    description: اللاعب مش بيدخل AFK تلقائي ومش بيتطرد
+    default: false
+  afk.reload:
+    description: /afk reload
+    default: op
